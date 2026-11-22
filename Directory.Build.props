@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <!-- School of Dragons client folder installed by the Project Edge launcher, e.g.
+         ...\portable\launcher\clients\client-3.31.0 (contains DOMain_Data and BepInEx).
+         Pass it on the command line: dotnet build FlightEffects -p:GameDir="...\client-3.31.0" -->
+    <GameDir Condition="'$(GameDir)' == ''"></GameDir>
+  </PropertyGroup>
+
+  <Target Name="CheckGameDir" BeforeTargets="ResolveAssemblyReferences"
+          Condition="'$(MSBuildProjectName)' == 'FlightEffects' And !Exists('$(GameDir)\DOMain_Data\Managed\Assembly-CSharp.dll')">
+    <Error Text="GameDir must point to the School of Dragons client folder (with DOMain_Data and BepInEx). Build with -p:GameDir=&quot;...\clients\client-3.31.0&quot;." />
+  </Target>
+</Project>

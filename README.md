@@ -14,7 +14,7 @@ Beim Fliegen auf dem eigenen Drachen ziehen Streifen und Partikel von den Flüge
 ## Installieren
 
 1. Spiel und Launcher schließen.
-2. Die Datei `FlightEffects_0.1.1.spf` in den Ordner `payloads` des Project-Edge-Launchers kopieren.
+2. `FlightEffects_0.1.1.spf` von den [Releases](https://github.com/patstar374/sod-flight-effects/releases/latest) herunterladen und in den Ordner `payloads` des Project-Edge-Launchers kopieren.
 3. Den Launcher starten. Er erkennt das neue Paket und öffnet von selbst den **„Payload manager“**.
    - Falls nicht: beim Start **Shift** halten, dann **„More options...“** und **„Open payload manager“**.
 4. In der Liste „Payloads“ auf **„Flight Effects“** klicken und mit **„Ok“** bestätigen. Der Launcher baut den Spiel-Client dabei einmal neu auf und startet das Spiel.
